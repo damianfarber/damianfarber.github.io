@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -68,6 +69,9 @@
   <!-- Header -->
   <section class="hero is-link is-fullheight is-fullheight-with-navbar">
     <div class="hero-body">
+      <figure class="image is-128x128" id="fotocv">
+      <img src="img/fotocv.png" alt="This is me"/>
+      </figure>
       <div class="container">Hello! I am
         <h1 class="title is-1">
           Damián Farber
@@ -86,7 +90,7 @@
       <h3 class="title is-2">About Me</h3>
       <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
       <div class="container">
-        <p class=".inter-fuente">Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
+        <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
           field of
           <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
           Looking for an opportunity to work and upgrade, as well as being involved in an organization that
@@ -109,7 +113,7 @@
     </div>
   </section>
 
-    <div class="columns has-same-height is-gapless">
+    <div class="columns has-same-height is-gapless" id="tarjetas">
       <div class="column">
         <!-- Profile -->
         <div class="card">
@@ -123,16 +127,16 @@
                   <th colspan="2"></th>
                 </tr>
                 <tr>
-                  <td>Address:</td>
-                  <td>Guru's Lab</td>
+                  <td>Location:</td>
+                  <td>Tucumán, Argentina</td>
                 </tr>
                 <tr>
                   <td>Phone:</td>
-                  <td>0123-456789</td>
+                  <td>+54 3816640020</td>
                 </tr>
                 <tr>
                   <td>Email:</td>
-                  <td>minion@despicable.me</td>
+                  <td>farberdamian@gmail.com</td>
                 </tr>
               </table>
             </div>
@@ -141,7 +145,6 @@
               <a href="#" class="button is-link">Github</a>
               <a href="#" class="button is-link">LinkedIn</a>
               <a href="#" class="button is-link">Twitter</a>
-              <a href="#" class="button is-link">CodeTrace</a>
             </div>
           </div>
         </div>
@@ -454,7 +457,7 @@
 
             <div class="field is-grouped has-text-centered">
               <div class="control">
-                <button class="button is-link is-large"><span class="icon">
+                <button class="button is-link is-medium"><span class="icon">
                     <i class="fas fa-envelope"></i>
                   </span>
                   <span>Submit</span></button>
@@ -477,6 +480,16 @@
       </p>
     </div>
   </footer>
+  <script>
+    ScrollReveal().reveal('.navbar', { delay: 400 });
+    ScrollReveal().reveal('.hero-body', { delay: 400 });
+    ScrollReveal().reveal('#about', { delay: 200 });
+		ScrollReveal().reveal('#tarjetas', { delay: 200 });
+    ScrollReveal().reveal('#services', { delay: 200 });
+    ScrollReveal().reveal('#portfolio', { delay: 200 });
+    ScrollReveal().reveal('#contact', { delay: 200 });
+    ScrollReveal().reveal('#resume', { delay: 200 });
+	</script>
 </body>
 
 </html>
