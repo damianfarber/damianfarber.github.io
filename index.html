@@ -6,17 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Damián Farber - QA Tester</title>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.9.x-->
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <!-- Bulma Version 0.9.x -->
   <link rel="stylesheet" type="text/css" href="css/bulma.css" />
-  <link rel="stylesheet" type="text/css" href="css/personal.css">
   <script async type="text/javascript" src="js/bulma.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <!-- Inter font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/ee398b20db.js" crossorigin="anonymous"></script>
+  <!-- Scroll effect -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -70,7 +72,7 @@
   <section class="hero is-link is-fullheight is-fullheight-with-navbar">
     <div class="hero-body">
       <figure class="image is-128x128" id="fotocv">
-      <img src="img/fotocv.png" alt="This is me"/>
+      <a href="index.html"><img src="img/fotocv.png" alt="This is me"/></a>
       </figure>
       <div class="container">Hello! I am
         <h1 class="title is-1">
@@ -104,11 +106,11 @@
     <div class="section-heading">
       <h3 class="title is-2">Resume</h3>
       <h4 class="subtitle is-5">More about my past</h4>
-      <a href="#" class="button is-link is-medium">
+      <a href="#" class="button is-success is-medium">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
-        <span>Download My Resume</span>
+        <span>View my resume (.pdf)</span>
       </a>
     </div>
   </section>
@@ -118,7 +120,7 @@
         <!-- Profile -->
         <div class="card">
           <div class="card-content">
-            <h3 class="title is-4">Profile</h3>
+            <h3 class="title is-4">Contact Info</h3>
 
             <div class="content">
               <table class="table-profile">
@@ -247,7 +249,7 @@
   <!-- Services -->
   <section class="section" id="services">
     <div class="section-heading">
-      <h3 class="title is-2">Services</h3>
+      <h3 class="title is-2">Skills</h3>
       <h4 class="subtitle is-5">What can I do for you?</h4>
     </div>
     <div class="container">
@@ -255,7 +257,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
+              <h4 class="title is-5">Manual Testing</h4>
               Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
               Vue.js.
             </div>
@@ -264,7 +266,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
+              <h4 class="title is-5">API Testing</h4>
               Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
             </div>
           </div>
@@ -275,7 +277,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
+              <h4 class="title is-5">Database Testing</h4>
               Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
               Vue.js.
             </div>
@@ -284,7 +286,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
+              <h4 class="title is-5">Agile Testing</h4>
               Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
             </div>
           </div>
@@ -434,14 +436,14 @@
             <div class="field">
               <label class="label">Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="Who are you?">
               </div>
             </div>
 
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Email input" value="">
+                <input class="input" type="email" placeholder="Let's stay in touch!" value="">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -451,7 +453,7 @@
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
+                <textarea class="textarea" placeholder="How can I help you?"></textarea>
               </div>
             </div>
 
@@ -474,21 +476,21 @@
   <footer class="footer">
     <div class="section-heading">
       <p>
-        <strong>Bulma Personal Template</strong> by <a href="https://mubaidr.js.org">Muhammad Ubaid Raza</a>. The
-        source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        <a href="https://github.com/damianfarber" alt="GitHub"><i class="fa-4x fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/damianfarber/" alt="LinkedIn"><i class="fa-4x fa-brands fa-linkedin"></i></a>
+
       </p>
     </div>
   </footer>
   <script>
     ScrollReveal().reveal('.navbar', { delay: 400 });
     ScrollReveal().reveal('.hero-body', { delay: 400 });
-    ScrollReveal().reveal('#about', { delay: 200 });
-		ScrollReveal().reveal('#tarjetas', { delay: 200 });
-    ScrollReveal().reveal('#services', { delay: 200 });
-    ScrollReveal().reveal('#portfolio', { delay: 200 });
-    ScrollReveal().reveal('#contact', { delay: 200 });
-    ScrollReveal().reveal('#resume', { delay: 200 });
+    ScrollReveal().reveal('#about', { delay: 250 });
+		ScrollReveal().reveal('#tarjetas', { delay: 250 });
+    ScrollReveal().reveal('#services', { delay: 250 });
+    ScrollReveal().reveal('#portfolio', { delay: 250 });
+    ScrollReveal().reveal('#contact', { delay: 250 });
+    ScrollReveal().reveal('#resume', { delay: 250 });
 	</script>
 </body>
 
