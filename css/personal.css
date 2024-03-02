@@ -1,3 +1,11 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
 .has-same-height .card {
   height: 320px;
   overflow: hidden;
