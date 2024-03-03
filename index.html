@@ -26,20 +26,19 @@
 
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+  <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
+  
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
         <a class="navbar-item" href="#about">
           <span class="icon">
-            <i class="fas fa-info"></i>
+            <i class="fa-solid fa-user"></i>
           </span>
           <span>About Me</span>
         </a>
@@ -51,7 +50,7 @@
         </a>
         <a class="navbar-item" href="#portfolio">
           <span class="icon">
-            <i class="fas fa-th-list"></i>
+            <i class="fa-solid fa-briefcase"></i>
           </span>
           <span>Portfolio</span>
         </a>
@@ -89,12 +88,7 @@
       <h3 class="title is-2">About Me</h3>
       <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
       <div class="container">
-        <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
-          field of
-          <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
-          Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-          believes
-          in gaining a competitive edge and giving back to the community.</p>
+        <p>Graduate Communication Sciences Technician in pursuit of developing a productive and stable career in today's IT Industry as a Quality Engineer, bringing in the knowledge of my field into cutting-edge projects.</p>
       </div>
     </div>
 
@@ -103,7 +97,7 @@
         <!-- Profile -->
         <div class="card">
           <div class="card-content">
-            <h3 class="title is-4">Contact Info</h3>
+            <h3 class="title is-4">Personal Info</h3>
 
             <div class="content">
               <table class="table-profile">
@@ -123,14 +117,18 @@
                   <td>Email:</td>
                   <td>farberdamian@gmail.com</td>
                 </tr>
+                <tr>
+                  <td>Languages:</td>
+                  <td>
+                    Spanish (Native)
+                    <br />
+                    English (Advanced)
+                  </td>
+                </tr>
               </table>
             </div>
 
-            <div class="buttons has-addons is-centered">
-              <a href="#" class="button is-link">Github</a>
-              <a href="#" class="button is-link">LinkedIn</a>
-              <a href="#" class="button is-link">Twitter</a>
-            </div>
+
           </div>
         </div>
       </div>
@@ -160,69 +158,11 @@
       <div class="column">
         <!-- Skills -->
         <div class="card">
-          <div class="card-content skills-content">
+          <div class="card-content">
             <h3 class="title is-4">Soft Skills</h3>
             <div class="content">
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>JavaScript:</strong>
-                      <br>
-                      <progress class="progress is-primary" value="90" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Vue.js:</strong>
-                      <br>
-                      <progress class="progress is-primary" value="90" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Node.js:</strong>
-                      <br>
-                      <progress class="progress is-primary" value="75" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>HTML5/CSS3</strong>
-                      <br>
-                      <progress class="progress is-primary" value="95" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Databases</strong>
-                      <br>
-                      <progress class="progress is-primary" value="66" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ipsum vero officiis ea accusantium asperiores corrupti? Culpa id eaque quod molestiae, repudiandae cupiditate sed quos optio fugit recusandae quae dolor!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ratione vitae. Sunt sed fuga quisquam? Nihil accusamus nobis eveniet ipsam. Voluptates odit laudantium numquam exercitationem quia, impedit nobis at quam.</p>
             </div>
           </div>
         </div>
@@ -469,9 +409,9 @@
   <footer class="footer">
     <div class="section-heading">
       <p>
-        <a href="https://github.com/damianfarber" alt="GitHub"><i class="fa-4x fa-brands fa-square-github"></i></a>
-        <a href="https://www.linkedin.com/in/damianfarber/" alt="LinkedIn"><i class="fa-4x fa-brands fa-linkedin"></i></a>
-
+        <a href="https://www.linkedin.com/in/damianfarber/" alt="LinkedIn"><i class="fa-3x fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/damianfarber" alt="GitHub"><i class="fa-3x fa-brands fa-square-github"></i></a>
+        <a href="https://twitter.com/damianfarber" alt="Twitter"><i class="fa-3x fa-brands fa-square-twitter"></i></a>
       </p>
     </div>
   </footer>
