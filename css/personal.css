@@ -1,11 +1,3 @@
-html {
-  scroll-snap-type: y mandatory;
-}
-
-section {
-  scroll-snap-align: start;
-}
-
 .has-same-height .card {
   height: 320px;
   overflow: hidden;
@@ -67,4 +59,8 @@ body {
 
 #fotocv {
   margin:20px;
+}
+
+.tituloprojecto {
+  margin-right: 5px;
 }
