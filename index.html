@@ -1,407 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Damián Farber - QA Tester</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <!-- Bulma Version 0.9.x -->
-  <link rel="stylesheet" type="text/css" href="css/bulma.css" />
-  <script async type="text/javascript" src="js/bulma.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/personal.css">
-  <!-- Inter font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/ee398b20db.js" crossorigin="anonymous"></script>
-  <!-- Scroll effect -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Farber - QA</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <!-- Scripts -->
+    <script async type="text/javascript" src="js/bulma.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ee398b20db.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
-  
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-
-    <div class="navbar-menu" id="navMenu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#about">
-          <span class="icon">
-            <i class="fa-solid fa-user"></i>
-          </span>
-          <span>About Me</span>
-        </a>
-        <a class="navbar-item" href="#services">
-          <span class="icon">
-            <i class="fas fa-bars"></i>
-          </span>
-          <span>Skills</span>
-        </a>
-        <a class="navbar-item" href="#portfolio">
-          <span class="icon">
-            <i class="fa-solid fa-briefcase"></i>
-          </span>
-          <span>Portfolio</span>
-        </a>
-        <a class="navbar-item" href="#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Language
+<body class="has-navbar-fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            Damián Farber
           </a>
-  
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="../en/index.html">
-              English
+      
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#info">
+              About Me
             </a>
-            <a class="navbar-item" href="../es/index.html">
-              Español
+      
+            <a class="navbar-item" href="#skills">
+              Skills
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <div class="welcome">
-  <!-- Header -->
-  <section class="hero is-link is-fullheight is-fullheight-with-navbar" id="header">
-    <div class="hero-body">
-      <figure class="image is-128x128" id="fotocv">
-      <a href="index.html"><img src="img/fotocv.png" alt="This is me"/></a>
-      </figure>
-      <div class="container">Hello! I am
-        <h1 class="title is-1">
-          Damián Farber
-        </h1>
-        <h2 class="subtitle is-3">
-          QA Tester
-        </h2>
-      </div>
-    </div>
-  </section>
+            <a class="navbar-item" href="#portfolio">
+                Portfolio
+            </a>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <!-- Title -->
-    <div class="section-heading">
-      <h3 class="title is-2">About Me</h3>
-      <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
-      <div class="container">
-        <p>Graduate Communication Sciences Technician in pursuit of developing a productive and stable career in today's IT Industry as a Quality Engineer, bringing in the knowledge of my field into cutting-edge projects.</p>
-      </div>
-    </div>
-  </div>
-    <div class="columns has-same-height is-gapless" id="tarjetas">
-      <div class="column">
-        <!-- Profile -->
-        <div class="card">
-          <div class="card-content">
-            <h3 class="title is-4">Personal Info</h3>
-
-            <div class="content">
-              <table class="table-profile">
-                <tr>
-                  <th colspan="1"></th>
-                  <th colspan="2"></th>
-                </tr>
-                <tr>
-                  <td>Location</td>
-                  <td>Tucumán, Argentina</td>
-                </tr>
-                <tr>
-                  <td>Phone</td>
-                  <td>+54 3816640020</td>
-                </tr>
-                <tr>
-                  <td>Email</td>
-                  <td>farberdamian@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Languages</td>
-                  <td>
-                    Spanish (Native)
-                    <br />
-                    English (Advanced)
-                  </td>
-                </tr>
-              </table>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <div class="card-content">
-            <h3 class="title is-4">My Resume</h3>
-                <h3 class="title is-4">
-                  <a href="#" class="button is-success" alt="View Resume (.pdf)">
-                    <span class="icon">
-                      <i class="fa-solid fa-file-pdf"></i>
-                    </span>
-                    <span>View Resume</span>
-                  </a>
-                  </h3>
-                <h3 class="title is-4">
-                  <a href="#" class="button is-success" alt="Download Resume (.pdf)">
-                    <span class="icon">
-                      <i class="fa-solid fa-cloud-arrow-down"></i>
-                    </span>
-                    <span>Download Resume</span>
-                  </a>
-                  </h3>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <!-- Skills -->
-        <div class="card">
-          <div class="card-content">
-            <h3 class="title is-4">Soft Skills</h3>
-            <div class="content">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ipsum vero officiis ea accusantium asperiores corrupti? Culpa id eaque quod molestiae, repudiandae cupiditate sed quos optio fugit recusandae quae dolor!</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ratione vitae. Sunt sed fuga quisquam? Nihil accusamus nobis eveniet ipsam. Voluptates odit laudantium numquam exercitationem quia, impedit nobis at quam.</p>
+            <a class="navbar-item" href="#contact">
+                Contact
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Language
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  English
+                </a>
+                <a class="navbar-item">
+                  Español
+                </a>
+              </div>
             </div>
           </div>
+      
         </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Services -->
-  <section class="section" id="services">
-    <div class="section-heading">
-      <h3 class="title is-2">Skills</h3>
-      <h4 class="subtitle is-5">What can I do for you?</h4>
-        <div class="tags custom-tags"><b>
-          <span class="tag is-light">Manual Testing</span><span class="tag is-light">Git/GitHub</span><span
-            class="tag is-light">Jira</span><span class="tag is-light">Qase</span><span class="tag is-light">Postman</span><span
-            class="tag is-light">MySQL</span><span class="tag is-light">Scrum</span><span class="tag is-light">Agile</span>
-        </b></div>
-    </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Manual Testing</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi deserunt magni libero quae quibusdam dicta earum corrupti. Consequuntur, numquam! Similique perspiciatis, dignissimos consequuntur laudantium libero nisi qui perferendis ex!
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">API Testing</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor itaque perferendis mollitia minima ipsam vitae excepturi pariatur commodi amet rerum nam at facere, magnam animi impedit, modi maiores deserunt.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Database Testing</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis sequi sit sed voluptates ab commodi, facere vero ratione esse dicta aliquid non, odit veniam beatae illum ut voluptas quo.
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Agile Testing</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero consequuntur animi. Officia sint tempore quis eaque labore debitis laudantium illum omnis minima ipsam laboriosam atque, sed asperiores. Laboriosam, velit.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      <!-- Skills tags -->
-
-  </section>
-
-  <!-- Portfolio -->
-  <section class="section" id="portfolio">
-    <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">Portfolio</h3>
-        <h4 class="subtitle is-5">My latest works</h4>
-      </div>
-
-      <div class="container portfolio-container">
+      </nav>
+    <!-- Info -->
+    <section id="info" class="hero is-halfheight is-link">
+        
+    <div class="hero-body ">
+        <div class="container">
         <div class="columns">
-          <div class="column">
-          
-            <!-- admin -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span class="tituloprojecto">Gymove</span>
-                  <span class="is-pulled-right">
-                    <span class="tag is-default">Manual</span>
-                    <span class="tag is-warning">SQL</span>
-                    <span class="tag is-default">Agile</span>
-                    <span class="tag is-default">Qase</span>
-                  </span>
+        <div class="column is-narrow">
+          <figure class="image is-128x128" id="fotocv">
+          <a href="index.html"><img src="img/fotocv.png" alt="This is me"/></a>
+          </figure></div>
+            <div class="column is-narrow">
+ 
+                <p class="title is-2">Damián Farber</p>
+                <p class="subtitle is-5">Quality Assurance Tester</p>
+                <a href="#" alt="View my Resume"><button class="button is-small is-link is-inverted">View Resume</button></a>
+                <a href="https://www.linkedin.com/in/damianfarber/" target="_blank" rel="noopener noreferrer" alt="My LinkedIn profile"><button class="button is-small is-link is-inverted">LinkedIn</button></a>
+                <a href="https://github.com/damianfarber" target="_blank" rel="noopener noreferrer" alt="My GitHub profile"><button class="button is-small is-link is-inverted">GitHub</button></a>
+            </div>
+            <div class="column">
+                <p>
+                  Graduate Communication Sciences Technician from Argentina in pursuit of developing a productive and stable career in today's IT Industry as a Quality Assurance Engineer. Alongside with the knowledge and insights communication yields, I strive towards adding value to projects quality and teams through a complete skillset in Quality Assurance. Proactiveness, communication, technical expertise and attention to detail are my four pillars when approaching new challenges and projects.
                 </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="https://picsum.photos/200/100" alt="Project screenshot">
-                </figure>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut facere quia suscipit atque iste eaque impedit molestias reiciendis deleniti rerum pariatur necessitatibus delectus accusantium nobis, alias consequatur qui voluptates sint?</p>
-                  <p><ul>
-                    <li>Aut facere quia suscipit atque iste eaque impedit</li>
-                    <li>Aut facere quia suscipit atque iste eaque impedit</li>
-                    <li>Aut facere quia suscipit atque iste eaque impedit</li>
-                  </ul></p>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/admin.html" class="card-footer-item">Read More</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">GitHub</a>
-              </footer>
             </div>
-      </div>
-      <div class="column">
-          
-        <!-- admin -->
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              <span class="tituloprojecto">To-Do List</span>
-              <span class="is-pulled-right">
-                <span class="tag is-default">Manual</span>
-                <span class="tag is-default">Postman</span>
-              </span>
-            </p>
-          </header>
-          <div class="card-content">
-            <figure class="image">
-              <img src="https://picsum.photos/200/100" alt="Project screenshot">
-            </figure>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut facere quia suscipit atque iste eaque impedit molestias reiciendis deleniti rerum pariatur necessitatibus delectus accusantium nobis, alias consequatur qui voluptates sint?</p>
-          </div>
-          <footer class="card-footer">
-            <a href="templates/admin.html" class="card-footer-item">Read More</a>
-            <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">GitHub</a>
-          </footer>
+            </div>
         </div>
-  </div>
-  <div class="column">
-          
-    <!-- admin -->
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="tituloprojecto">Suplementos Yerba Buena</span>
-          <span class="is-pulled-right">
-            <span class="tag is-default">Manual</span>
-            <span class="tag is-info">E-Commerce</span>
-          </span>
-        </p>
-      </header>
-      <div class="card-content">
-        <figure class="image">
-          <img src="https://picsum.photos/200/100" alt="Project screenshot">
-        </figure>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut facere quia suscipit atque iste eaque impedit molestias reiciendis deleniti rerum pariatur necessitatibus delectus accusantium nobis, alias consequatur qui voluptates sint?</p>
-      </div>
-      <footer class="card-footer">
-        <a href="templates/admin.html" class="card-footer-item">Read More</a>
-        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">GitHub</a>
-      </footer>
     </div>
-</div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
+
+    </section>
+    <!-- Skills -->
+    <section class="section" id="skills" >
+    <div class="container has-text-centered" >
+        <div class="columns">
+            <div class="column">
+          <h3 class="title is-2">Skills</h3>
+          <h4 class="subtitle is-5">What can I do for you?</h4>
+          <div class="column">
+            <div class="tags is-centered">
+              <span class="tag">Manual Testing</span>
+              <span class="tag">Playwright</span>
+              <span class="tag">Python</span>
+              <span class="tag">Git/GitHub</span>
+              <span class="tag">HTML & CSS</span>
+              <span class="tag">Jira</span>
+              <span class="tag">Qase</span>
+              <span class="tag">Postman</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Scrum</span>
+              <span class="tag">Agile</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
     <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">Contact</h3>
-        <h4 class="subtitle is-5">Get in touch</h4>
-      </div>
-
-      <div class="columns">
-        <div class="column is-6 is-offset-3">
-          <div class="box">
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Who are you?">
-              </div>
+    <div class="columns">
+        <div class="column">
+            <div class="box">
+            <div class="content">
+            <h1 class="title is-5">Manual Testing</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
+            </p>
             </div>
-
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control">
-                <input class="input" type="email" placeholder="Let's stay in touch!" value="">
-              </div>
+        </div>
+        </div>
+        <div class="column">
+            <div class="box">
+            <div class="content">
+            <h1 class="title is-5">Automation Testing</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
+            </p>
             </div>
-
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="How can I help you?" rows="6" ></textarea>
-              </div>
-            </div>
-
-            <div class="field is-grouped has-text-centered">
-              <div class="control">
-                <button class="button is-link"><span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span>Submit</span></button>
-              </div>
-            </div>
-          </div>
+        </div>
         </div>
       </div>
-
+      <div class="columns">
+        <div class="column">
+            <div class="box">
+            <div class="content">
+            <h1 class="title is-5">Database and API Testing</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
+            </p>
+            </div>
+        </div>
+        </div>
+        <div class="column">
+            <div class="box">
+            <div class="content">
+            <h1 class="title is-5">Agile Testing</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
+            </p>
+            </div>
+        </div>
+        </div>
+      </div>
+    
+    </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+        <div class="container has-text-centered" >
+            <div class="columns">
+                <div class="column">
+              <h3 class="title is-2">Portfolio</h3>
+              <h4 class="subtitle is-5">My latest projects</h4>
+            </div>
+        </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <section id="foot">
-  <footer class="footer">
-    <div class="section-heading">
-      <p>
-        <a href="https://www.linkedin.com/in/damianfarber/" alt="LinkedIn"><i class="fa-3x fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/damianfarber" alt="GitHub"><i class="fa-3x fa-brands fa-square-github"></i></a>
-        <a href="https://twitter.com/damianfarber" alt="Twitter"><i class="fa-3x fa-brands fa-square-twitter"></i></a>
-      </p>
+    <section class="section">
+    <div class="container">
+    <div class="columns">
+        <div class="column">
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Project Title 1</p> 
+    
+                    <span class="card-header-icon"><div class="tags">
+                        <span class="tag is-default">Manual</span>
+                        <span class="tag is-warning">SQL</span>
+                        <span class="tag is-default">Agile</span>
+                        <span class="tag is-default">Qase</span>
+                    </div></span>
+                  
+                </header>
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                <div class="card-content">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    iaculis mauris.
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item js-modal-trigger" data-target="modal-js-1">Read More</a>
+                  <a href="#" class="card-footer-item">View on GitHub</a>
+                </footer>
+              </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Project Title 2</p> 
+    
+                    <span class="card-header-icon"><div class="tags">
+                        <span class="tag is-default">Manual</span>
+                        <span class="tag is-warning">SQL</span>
+                        <span class="tag is-default">Agile</span>
+                        <span class="tag is-default">Qase</span>
+                    </div></span>
+                  
+                </header>
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                <div class="card-content">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    iaculis mauris.
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item js-modal-trigger" data-target="modal-js-2">Read More</a>
+                  <a href="#" class="card-footer-item">View on GitHub</a>
+                </footer>
+              </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Project Title 3</p> 
+    
+                    <span class="card-header-icon"><div class="tags">
+                        <span class="tag is-default">Manual</span>
+                        <span class="tag is-warning">SQL</span>
+                        <span class="tag is-default">Agile</span>
+                        <span class="tag is-default">Qase</span>
+                    </div></span>
+                  
+                </header>
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                <div class="card-content">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    iaculis mauris.
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item js-modal-trigger" data-target="modal-js-3">Read More</a>
+                  <a href="#" class="card-footer-item">View on GitHub</a>
+                </footer>
+              </div>
+        </div>
     </div>
 
-  </footer>
-  </section>
-  <script>
-    ScrollReveal().reveal('section', { delay: 150 });
-	</script>
+        
+</div>
+    </section>
+    <!-- Contact -->
+    <section class="section"  id="contact">
+        <div class="container has-text-centered" >
+            <div class="columns">
+                <div class="column">
+              <h3 class="title is-2">Contact</h3>
+              <h4 class="subtitle is-5">Let's work together!</h4>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="box">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Full name">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Your email">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="What can I help you with?">
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                          <textarea class="textarea" placeholder="Your message goes here"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <div class="control">
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            Let me know when a new project is added
+                          </label>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-link">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <a href="https://www.linkedin.com/in/damianfarber/" alt="LinkedIn"><i class="fa-3x fa-brands fa-linkedin social"></i></a>
+                <a href="https://github.com/damianfarber" alt="GitHub"><i class="fa-3x fa-brands fa-square-github social"></i></a>
+                <a href="https://twitter.com/damianfarber" alt="Twitter"><i class="fa-3x fa-brands fa-square-twitter social"></i></a>
+              </p>
+            </div>
+          </footer>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-js-1" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title"><b>Project Title 1</b></p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="content">
+          <h3>About this project</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus aliquam dolorum labore porro nobis repellendus pariatur earum iure voluptatum ex commodi repellat officia, quo facere accusamus ea veniam asperiores debitis?</p>
+        </div>
+        </section>
+        <footer class="modal-card-foot">
+          <div class="buttons">
+            <button class="button">Close</button>
+            <button class="button">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>View on GitHub</span>
+            </button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div id="modal-js-2" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title"><b>Project Title 2</b></p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+          <div class="buttons">
+            <button class="button">Close</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div id="modal-js-3" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title"><b>Project Title 3</b></p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+          <div class="buttons">
+            <button class="button">Close</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
 </body>
-
 </html>
