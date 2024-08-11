@@ -1,23 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-  // Add a click event on each of them
-  $navbarBurgers.forEach( el => {
-    el.addEventListener('click', () => {
+  // Check if there are any navbar burgers
+  if (navbarBurgers.length > 0) {
 
-      // Get the target from the "data-target" attribute
-      const target = el.dataset.target;
-      const $target = document.getElementById(target);
+    // Add a click event on each of them
+    navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
 
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      el.classList.toggle('is-active');
-      $target.classList.toggle('is-active');
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
 
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+  // Close the navbar when a link is clicked
+  const navbarItems = document.querySelectorAll('.navbar-item');
+
+  navbarItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const navbarBurger = document.querySelector('.navbar-burger');
+      const navbarMenu = document.getElementById(navbarBurger.dataset.target);
+
+      if (navbarBurger.classList.contains('is-active')) {
+        navbarBurger.classList.remove('is-active');
+        navbarMenu.classList.remove('is-active');
+      }
     });
   });
-
 });
 
 document.addEventListener('DOMContentLoaded', () => {
