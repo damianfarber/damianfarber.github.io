@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Farber - QA</title>
@@ -14,449 +14,385 @@
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <!-- Scripts -->
     <script async type="text/javascript" src="js/bulma.js"></script>
-
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/ee398b20db.js" crossorigin="anonymous"></script>
-</head>
-<body class="has-navbar-fixed-top">
-    <!-- Navbar -->
+  </head>
+  <body class="has-navbar-fixed-top">
+    <!-- Navbar -------------------------------------------------->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            Damián Farber
-          </a>
-      
-          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html"> Damián Farber </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#info"> About Me </a>
+          <a class="navbar-item" href="#skills"> Skills </a>
+          <a class="navbar-item" href="#portfolio"> Portfolio </a>
+          <a class="navbar-item" href="#contact"> Contact </a>
         </div>
-      
-        <div class="navbar-menu" id="navMenu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="#info">
-              About Me
-            </a>
-      
-            <a class="navbar-item" href="#skills">
-              Skills
-            </a>
-
-            <a class="navbar-item" href="#portfolio">
-                Portfolio
-            </a>
-
-            <a class="navbar-item" href="#contact">
-                Contact
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                Language
+      </div>
+    </nav>
+    <!-- Info -------------------------------------------------->
+    <section id="info" class="hero is-halfheight is-link">
+      <div class="hero-body ">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-narrow">
+              <figure class="image is-128x128" id="fotocv">
+                <a href="index.html">
+                  <img src="img/fotocv.png" alt="This is me" />
+                </a>
+              </figure>
+            </div>
+            <div class="column is-narrow">
+              <p class="title is-2">Damián Farber</p>
+              <p class="subtitle is-5">Quality Assurance Tester</p>
+              <a href="Damian Farber - Resume.pdf" alt="View my Resume" target="_blank" rel="noopener noreferrer">
+                <button class="button is-small is-link is-inverted hovershad">View Resume</button>
               </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  English
-                </a>
-                <a class="navbar-item">
-                  Español
-                </a>
+              <a href="https://www.linkedin.com/in/damianfarber/" target="_blank" rel="noopener noreferrer" alt="My LinkedIn profile">
+                <button class="button is-small is-link is-inverted hovershad">LinkedIn</button>
+              </a>
+              <a href="https://github.com/damianfarber" target="_blank" rel="noopener noreferrer" alt="My GitHub profile">
+                <button class="button is-small is-link is-inverted hovershad">GitHub</button>
+              </a>
+            </div>
+            <div class="column">
+              <p> I'm a Graduate Communication Sciences Technician from Argentina in pursuit of developing a productive and stable career in today's IT Industry as a <b>Quality Assurance Engineer</b>. With a complete skillset in Quality Assurance, alongside the knowledge and insights my communication background yields, I strive towards adding value to projects quality and teams. </p>
+              <p>
+                <b>Proactiveness, communication, technical expertise and attention to detail</b> are my four pillars when approaching new challenges and projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -------------------------------------------------->
+    <section class="section" id="skills">
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <h3 class="title is-2">Skills</h3>
+            <h4 class="subtitle is-5">What can I do for you?</h4>
+            <div class="column">
+              <div class="tags is-centered">
+                <span class="tag">Manual Testing</span>
+                <span class="tag">Playwright</span>
+                <span class="tag">Python</span>
+                <span class="tag">Pytest</span>
+                <span class="tag">Gherkin</span>
+                <span class="tag">Git/GitHub</span>
+                <span class="tag">HTML & CSS</span>
+                <span class="tag">Jira</span>
+                <span class="tag">Xray</span>
+                <span class="tag">Qase</span>
+                <span class="tag">Postman</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Scrum</span>
+                <span class="tag">Agile</span>
               </div>
             </div>
           </div>
-      
         </div>
-      </nav>
-    <!-- Info -->
-    <section id="info" class="hero is-halfheight is-link">
-        
-    <div class="hero-body ">
-        <div class="container">
+      </div>
+      <div class="container">
         <div class="columns">
-        <div class="column is-narrow">
-          <figure class="image is-128x128" id="fotocv">
-          <a href="index.html"><img src="img/fotocv.png" alt="This is me"/></a>
-          </figure></div>
-            <div class="column is-narrow">
- 
-                <p class="title is-2">Damián Farber</p>
-                <p class="subtitle is-5">Quality Assurance Tester</p>
-                <a href="Damian Farber - Resume.pdf" alt="View my Resume" target="_blank" rel="noopener noreferrer"><button class="button is-small is-link is-inverted hovershad">View Resume</button></a>
-                <a href="https://www.linkedin.com/in/damianfarber/" target="_blank" rel="noopener noreferrer" alt="My LinkedIn profile"><button class="button is-small is-link is-inverted hovershad">LinkedIn</button></a>
-                <a href="https://github.com/damianfarber" target="_blank" rel="noopener noreferrer" alt="My GitHub profile"><button class="button is-small is-link is-inverted hovershad">GitHub</button></a>
-            </div>
-            <div class="column">
-                <p>
-                  I'm a Graduate Communication Sciences Technician from Argentina in pursuit of developing a productive and stable career in today's IT Industry as a <b>Quality Assurance Engineer</b>. With a complete skillset in Quality Assurance, alongside the knowledge and insights my communication background yields, I strive towards adding value to projects quality and teams. </p>
-                 <p><b>Proactiveness, communication, technical expertise and attention to detail</b> are my four pillars when approaching new challenges and projects.</p> 
-                
-            </div>
-            </div>
-        </div>
-    </div>
-
-
-    </section>
-    <!-- Skills -->
-    <section class="section" id="skills" >
-    <div class="container has-text-centered" >
-        <div class="columns">
-            <div class="column">
-          <h3 class="title is-2">Skills</h3>
-          <h4 class="subtitle is-5">What can I do for you?</h4>
           <div class="column">
-            <div class="tags is-centered">
-              <span class="tag">Manual Testing</span>
-              <span class="tag">Playwright</span>
-              <span class="tag">Python</span>
-              <span class="tag">Pytest</span>
-              <span class="tag">Gherkin</span>
-              <span class="tag">Git/GitHub</span>
-              <span class="tag">HTML & CSS</span>
-              <span class="tag">Jira</span>
-              <span class="tag">Xray</span>
-              <span class="tag">Qase</span>
-              <span class="tag">Postman</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Scrum</span>
-              <span class="tag">Agile</span>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    <div class="container">
-    <div class="columns">
-        <div class="column">
             <div class="box">
-            <div class="content">
-            <h1 class="title is-5">Manual Testing</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
-            </p>
+              <div class="content">
+                <h1 class="title is-5">Manual Testing</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus. </p>
+              </div>
             </div>
-        </div>
-        </div>
-        <div class="column">
+          </div>
+          <div class="column">
             <div class="box">
-            <div class="content">
-            <h1 class="title is-5">Automation Testing</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
-            </p>
+              <div class="content">
+                <h1 class="title is-5">Automation Testing</h1>
+                <p> Currently learning automation testing using Playwright and Pytest, </p>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <div class="content">
+                <h1 class="title is-5">Database and API Testing</h1>
+                <p>Database and API testing to ensure the application interacts seamlessly with the backend. </p>
+                <p>Adding another layer of testing, using Postman for API testing and MySQL for accesing databases, allows me to ensure the overall quality of software products.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <div class="content">
+                <h1 class="title is-5">Agile Testing</h1>
+                <p> Knowledge and experience working on agile environments, including Scrum and Kanban frameworks, adding value to projects through continuous improvement. </p>
+                <p>Alongside an agile mindset, my background in communication allows me to bridge the gap between different cultures and establish successful communication on multifunctional teams.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="columns">
-        <div class="column">
-            <div class="box">
-            <div class="content">
-            <h1 class="title is-5">Database and API Testing</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
-            </p>
-            </div>
-        </div>
-        </div>
-        <div class="column">
-            <div class="box">
-            <div class="content">
-            <h1 class="title is-5">Agile Testing</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus impedit quo, sequi sed vel quidem corrupti quas fuga ex quibusdam corporis. Illum, ab. Asperiores, et voluptates! Quaerat facere iure doloribus.
-            </p>
-            </div>
-        </div>
-        </div>
-      </div>
-    
-    </div>
     </section>
-    <!-- Portfolio -->
+    <!-- Portfolio -------------------------------------------------->
     <section class="section" id="portfolio">
-        <div class="container has-text-centered" >
-            <div class="columns">
-                <div class="column">
-              <h3 class="title is-2">Portfolio</h3>
-              <h4 class="subtitle is-5">My latest projects</h4>
-            </div>
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <h3 class="title is-2">Portfolio</h3>
+            <h4 class="subtitle is-5">My latest projects</h4>
+          </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
     <section class="section">
-    <div class="container">
-    <div class="columns">
-        <div class="column">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
             <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">Suplementos Yerba Buena</p> 
-    
-                    <span class="card-header-icon"><div class="tags">
-                        <span class="tag is-default">Manual Testing</span>
-                        <span class="tag is-default">Jira</span>
-                        <span class="tag is-default">Xray</span>
-                    </div></span>
-                  
-                </header>
-                <div class="card-image">
-                    <figure class="image is-16by9">
-                      <img
-                        src="img/suplementosyb.png"
-                        alt="Suplementos Yerba Buena E-Commerce"
-                      />
-                    </figure>
-                  </div>
-                <div class="card-content">
-                  <div class="content">
-                    <p>In this project I performed <b>manual functional testing</b> for a sports supplements store built on Tiendanube, the leading e-commerce platform in Latin America. The client needed to ensure the site worked as expected and that no details were overlooked.</p> <p>For this purpose, <b>I used Jira and Xray for managing and tracking the testing process.</b></p>
-                  </div>
-                </div>
-                <footer class="card-footer">
-                  <a class="card-footer-item js-modal-trigger" data-target="modal-js-1">Read More</a>
-                </footer>
-              </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">Gymove</p> 
-    
-                    <span class="card-header-icon"><div class="tags">
-                        <span class="tag is-default">Manual Testing</span>
-                        <span class="tag is-default">Qase</span>
-                        <span class="tag is-default">Scrum</span>
-                        <span class="tag is-default">Git/GitHub</span>
-                    </div></span>
-                  
-                </header>
-                <div class="card-image">
-                    <figure class="image is-16by9">
-                      <img
-                        src="img/gymove.png"
-                        alt="Gymove Gym Management System"
-                      />
-                    </figure>
-                  </div>
-                <div class="card-content">
-                  <div class="content">
-                    <p>In this project I performed <b>manual functional testing</b> for a gym management system web application. This application was developed as part of NoCountry, a simulated work environment created to gain experience in a real-world environment.</p> <p>During this simulation, I worked alongside a multifunctional team over the span of five weeks using Scrum framework to deliver an MVP.</p>
-                  </div>
-                </div>
-                <footer class="card-footer">
-                  <a class="card-footer-item js-modal-trigger" data-target="modal-js-2">Read More</a>
-                </footer>
-              </div>
-        </div>
-
-    </div>
-
-    <div class="columns">
-      <div class="column">
-          <div class="card">
               <header class="card-header">
-                <p class="card-header-title">Flask.io Automation</p> 
-  
-                  <span class="card-header-icon"><div class="tags">
-                      <span class="tag is-default">Automation Testing</span>
-                      <span class="tag is-default">Playwright</span>
-                      <span class="tag is-default">Pytest</span>
-                      <span class="tag is-default">Gherkin</span>
-                  </div></span>
-                
+                <p class="card-header-title">Suplementos Yerba Buena</p>
+                <span class="card-header-icon">
+                  <div class="tags">
+                    <span class="tag is-default">Manual Testing</span>
+                    <span class="tag is-default">Jira</span>
+                    <span class="tag is-default">Xray</span>
+                  </div>
+                </span>
               </header>
               <div class="card-image">
-                  <figure class="image is-16by9">
-                    <img
-                      src="https://bulma.io/assets/images/placeholders/640x320.png"
-                      alt="Placeholder image"
-                    />
-                  </figure>
-                </div>
+                <figure class="image is-16by9">
+                  <img src="img/suplementosyb.png" alt="Suplementos Yerba Buena E-Commerce" />
+                </figure>
+              </div>
               <div class="card-content">
                 <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio aspernatur autem molestias at, non saepe alias voluptate ab aliquid, fuga dicta. Velit aperiam, mollitia sint autem nobis sed quos architecto?
+                  <p>In this project I performed <b>manual functional testing</b> for a sports supplements store built on Tiendanube, the leading e-commerce platform in Latin America. The client needed to ensure the site worked as expected and that no details were overlooked. </p>
+                  <p>For this purpose, <b>I used Jira and Xray for planning and managing the testing process</b>. </p>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item js-modal-trigger" data-target="modal-js-1">Read More</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Tu Consorcio Digital</p>
+                <span class="card-header-icon">
+                  <div class="tags">
+                    <span class="tag is-default">Manual Testing</span>
+                    <span class="tag is-default">Kanban</span>
+                    <span class="tag is-default">Agile</span>
+                  </div>
+                </span>
+              </header>
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="https://bulma.io/assets/images/placeholders/640x320.png" alt="Placeholder image" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi beatae ut architecto similique, voluptate cum eius? Exercitationem optio magni debitis nulla repellat magnam tempore in. Numquam nisi sequi eligendi voluptate.</p>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item js-modal-trigger" data-target="modal-js-2">Read More</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Flask.io Automation</p>
+                <span class="card-header-icon">
+                  <div class="tags">
+                    <span class="tag is-default">Automation Testing</span>
+                    <span class="tag is-default">Playwright</span>
+                    <span class="tag is-default">Pytest</span>
+                    <span class="tag is-default">Gherkin</span>
+                    <span class="tag is-default">Git/GitHub</span>
+                  </div>
+                </span>
+              </header>
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/flask.png" alt="Gymove Gym Management System" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p>Automation testing practice on Flask.io, a free and simple to-do list web application. Using <b>Playwright, Pytest and BDD-written test cases</b>, I created automated tests on Python to verify the main functionalities of the site. </p>
+                  <p>I used <b>Git to track and manage the different changes made on the code</b>. The whole project can be accessed on GitHub and I'm hopeful it will serve as a great reference for other manual testers looking forward to dive into automation testing. </p>
                 </div>
               </div>
               <footer class="card-footer">
                 <a class="card-footer-item js-modal-trigger" data-target="modal-js-3">Read More</a>
               </footer>
             </div>
-      </div>
-      <div class="column">
-          <div class="card">
+          </div>
+          <div class="column">
+            <div class="card">
               <header class="card-header">
-                <p class="card-header-title">Project Title 4</p> 
-  
-                  <span class="card-header-icon"><div class="tags">
-                      <span class="tag is-default">Manual</span>
-                      <span class="tag is-warning">SQL</span>
-                      <span class="tag is-default">Agile</span>
-                      <span class="tag is-default">Qase</span>
-                  </div></span>
-                
+                <p class="card-header-title">Gymove</p>
+                <span class="card-header-icon">
+                  <div class="tags">
+                    <span class="tag is-default">Manual Testing</span>
+                    <span class="tag is-default">Qase</span>
+                    <span class="tag is-default">Scrum</span>
+                    <span class="tag is-default">Git/GitHub</span>
+                  </div>
+                </span>
               </header>
               <div class="card-image">
-                  <figure class="image is-16by9">
-                    <img
-                      src="https://bulma.io/assets/images/placeholders/640x320.png"
-                      alt="Placeholder image"
-                    />
-                  </figure>
-                </div>
+                <figure class="image is-16by9">
+                  <img src="img/gymove.png" alt="Gymove Gym Management System" />
+                </figure>
+              </div>
               <div class="card-content">
                 <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                  iaculis mauris.
+                  <p>In this project I performed <b>manual functional testing</b> for a gym management system web application. This application was developed as part of NoCountry, a simulated work environment created to gain experience in a real-world environment. </p>
+                  <p>During this simulation, I worked alongside a multifunctional team over the span of five weeks <b>using Scrum framework to deliver an MVP</b>. </p>
                 </div>
               </div>
               <footer class="card-footer">
                 <a class="card-footer-item js-modal-trigger" data-target="modal-js-4">Read More</a>
               </footer>
             </div>
-      </div>
-
-  </div>
-        
-</div>
-    </section>
-    <!-- Contact -->
-    <section class="section"  id="contact">
-        <div class="container has-text-centered" >
-            <div class="columns">
-                <div class="column">
-              <h3 class="title is-2">Contact</h3>
-              <h4 class="subtitle is-5">Let's work together!</h4>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+    <!-- Contact -------------------------------------------------->
+    <section class="section" id="contact">
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <h3 class="title is-2">Contact</h3>
+            <h4 class="subtitle is-5">Let's work together!</h4>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-half">
-                    <div class="box">
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Full name">
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Your email">
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label class="label">Subject</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="What can I help you with?">
-                        </div>
-                      </div>
-                      
-                      
-                      <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                          <textarea class="textarea" placeholder="Your message goes here"></textarea>
-                        </div>
-                      </div>
-                      
-                      <div class="field">
-                        <div class="control">
-                          <label class="checkbox">
-                            <input type="checkbox">
-                            Let me know when a new project is added
-                          </label>
-                        </div>
-                      </div>
-                      
-                      
-                      <div class="field is-grouped">
-                        <div class="control">
-                          <button class="button is-link">Send</button>
-                        </div>
-                      </div>
-                    </div>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="box">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Full name">
                 </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Your email">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="What can I help you with?">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Your message goes here"></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox"> Let me know when a new project is added </label>
+                </div>
+              </div>
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Send</button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
+      </div>
     </section>
-    <!-- Footer -->
+    <!-- Footer -------------------------------------------------->
     <section id="footer">
-        <footer class="footer">
-            <div class="content has-text-centered">
-              <p>
-                <a href="https://www.linkedin.com/in/damianfarber/" alt="LinkedIn">
-                  <button class="button is-link"><span class="icon is-small"><i class="fa-brands fa-linkedin-in fa-2xl"></i></span></button>
-                </a>
-
-                <a href="https://github.com/damianfarber" alt="GitHub" >
-                  <button class="button is-link"><span class="icon is-small"><i class="fa-brands fa-github fa-2xl"></i></span></button>
-                </a>  
-
-                <a href="https://twitter.com/damianfarber" alt="Twitter">
-                  <button class="button is-link"><span class="icon is-small"><i class="fa-brands fa-twitter fa-2xl"></i></span></button>
-                </a>
-                  
-              </p>
-            </div>
-          </footer>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <a href="https://www.linkedin.com/in/damianfarber/" alt="LinkedIn">
+              <button class="button is-link">
+                <span class="icon is-small">
+                  <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                </span>
+              </button>
+            </a>
+            <a href="https://github.com/damianfarber" alt="GitHub">
+              <button class="button is-link">
+                <span class="icon is-small">
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                </span>
+              </button>
+            </a>
+            <a href="https://twitter.com/damianfarber" alt="Twitter">
+              <button class="button is-link">
+                <span class="icon is-small">
+                  <i class="fa-brands fa-twitter fa-2xl"></i>
+                </span>
+              </button>
+            </a>
+          </p>
+        </div>
+      </footer>
     </section>
-
-    <!-- Modals -->
+    <!-- Modals -------------------------------------------------->
     <!-- Project 1 -->
     <div id="modal-js-1" class="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title"><b>Suplementos Yerba Buena</b></p>
+          <p class="modal-card-title">
+            <b>Suplementos Yerba Buena</b>
+          </p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
           <div class="content">
-          <h4>Summary</h4>
-          <p>In this project I performed <b>manual functional testing</b> for a sports supplements store built on Tiendanube, the leading e-commerce platform in Latin America. The client needed to ensure the site worked as expected and that no details were overlooked.</p> <p>For this purpose, <b>I used Jira and Xray for managing and tracking the testing process.</b></p>
-          <p>With the creation and execution of an effective test suite, both for verifying key components and evaluating the overall details of the site, I managed to deliver the client comprehensive testing results and valuable feedback on areas where quality could be improved.</p>
-        
-        <h4>Key responsabilities</h4>
-        <ul>
-        <li>Configuring Jira project and Xray test management plugin in order to plan, design, execute and track tests, as well as generate test reports.</li>
-        <li>Writing test cases and grouping them into cohesive test suites according to the sections and functionalities of the site.</li>
-        <li>Executing test cases and documenting the process with gifs.</li>
-        <li>Writing detailed issue reports.</li>
-        <li>Documenting the testing process results in a summary for the client.</li>
-        </ul>
-        </div>
-        <nav class="level is-mobile">
-          <div class="level-item has-text-centered">
-            <div>
-              <p class="title">50</p>
-              <p class="heading">Tests Executed</p>
-            </div>
+            <h4>Summary</h4>
+            <p>In this project I performed <b>manual functional testing</b> for a sports supplements store built on Tiendanube, the leading e-commerce platform in Latin America. The client needed to ensure the site worked as expected and that no details were overlooked. </p>
+            <p>For this purpose, <b>I used Jira and Xray for managing and tracking the testing process.</b>
+            </p>
+            <p>With the creation and execution of an effective test suite, both for verifying key components and evaluating the overall details of the site, I managed to deliver the client comprehensive testing results and valuable feedback on areas where quality could be improved.</p>
+            <h4>Key responsabilities</h4>
+            <ul>
+              <li>Configuring Jira project and Xray test management plugin in order to plan, design, execute and track tests, as well as generate test reports.</li>
+              <li>Writing test cases and grouping them into cohesive test suites according to the sections and functionalities of the site.</li>
+              <li>Executing test cases and documenting the process with screenshots and gifs.</li>
+              <li>Writing issue reports.</li>
+              <li>Documenting the testing process results in a summary for the client.</li>
+            </ul>
           </div>
-          <div class="level-item has-text-centered">
-            <div>
-              <p class="title">9</p>
-              <p class="heading">Issues Reported</p>
-            </div>
-          </div>
-        </nav>
-        <p>Special thanks to Gustavo from Suplementos Yerba Buena for trusting in my work!</p>
+          <p>Special thanks to Gustavo from Suplementos Yerba Buena for trusting in my work!</p>
         </section>
         <footer class="modal-card-foot">
           <div class="buttons">
@@ -481,7 +417,9 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title"><b>Gymove</b></p>
+          <p class="modal-card-title">
+            <b>Tu Consorcio Digital</b>
+          </p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
@@ -504,7 +442,9 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title"><b>Project Title 3</b></p>
+          <p class="modal-card-title">
+            <b>Flask.io Automation</b>
+          </p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
@@ -522,7 +462,9 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title"><b>Project Title 4</b></p>
+          <p class="modal-card-title">
+            <b>Gymove</b>
+          </p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
@@ -535,6 +477,8 @@
         </footer>
       </div>
     </div>
-    <a href="#" class="back-to-top"><i class="fa-solid fa-angle-up"></i></a>
-</body>
+    <a href="#" class="back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </body>
 </html>
