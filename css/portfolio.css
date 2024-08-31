@@ -68,3 +68,6 @@ body {
 .back-to-top i {
   font-size: 24px;
 }
+.is-hidden {
+  display: none;
+}

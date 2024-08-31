@@ -339,44 +339,43 @@
         <div class="columns is-centered">
           <div class="column is-half">
             <div class="box">
-              <form action="https://formspree.io/f/xrbzjvwn" method="POST" >
-              <div class="field">
-                <label class="label" for="full-name">Name</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Full name">
+              <form action="https://formspree.io/f/xrbzjvwn" method="POST">
+                <div class="field">
+                  <label class="label" for="full-name">Name</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Full name" name="name" required>
+                  </div>
+                  <p class="help is-danger is-hidden">This field is required</p>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Your email" type="email" name="email">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input" type="email" placeholder="Your email" name="email" required>
+                  </div>
+                  <p class="help is-danger is-hidden">This field is required</p>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">Subject</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="What can I help you with?">
+                <div class="field">
+                  <label class="label">Subject</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="What can I help you with?" name="subject" required>
+                  </div>
+                  <p class="help is-danger is-hidden">This field is required</p>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Your message goes here" name="message"></textarea>
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Your message goes here" name="message" required></textarea>
+                  </div>
+                  <p class="help is-danger is-hidden">This field is required</p>
                 </div>
-              </div>
-              <div class="field">
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox"> Let me know when a new project is added </label>
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link" type="submit">Send</button>
+                  </div>
                 </div>
-              </div>
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link" type="submit">Send</button>
-                </div>
-              </div>
               </form>
             </div>
+            
           </div>
         </div>
       </div>

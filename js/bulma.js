@@ -102,3 +102,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Contact form interaction with required fields
+document.addEventListener('DOMContentLoaded', () => {
+  const requiredFields = document.querySelectorAll('input[required], textarea[required]');
+
+  requiredFields.forEach(field => {
+    // Select the corresponding help message paragraph
+    const helpMessage = field.parentElement.nextElementSibling;
+
+    const checkField = () => {
+      if (!field.value.trim()) {
+        field.classList.add('is-danger');
+        helpMessage.classList.remove('is-hidden');
+      } else {
+        field.classList.remove('is-danger');
+        helpMessage.classList.add('is-hidden');
+      }
+    };
+
+    // Add event listeners for blur and input events
+    field.addEventListener('blur', checkField);
+    field.addEventListener('input', checkField);
+  });
+});
