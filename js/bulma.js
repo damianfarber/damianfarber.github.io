@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const requiredFields = document.querySelectorAll('input[required], textarea[required]');
 
   requiredFields.forEach(field => {
-    // Select the corresponding help message paragraph
     const helpMessage = field.parentElement.nextElementSibling;
 
     const checkField = () => {
@@ -121,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    // Add event listeners for blur and input events
     field.addEventListener('blur', checkField);
     field.addEventListener('input', checkField);
   });
