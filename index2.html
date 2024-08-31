@@ -339,6 +339,7 @@
         <div class="columns is-centered">
           <div class="column is-half">
             <div class="box">
+              <form action="https://formspree.io/f/xrbzjvwn" method="POST" >
               <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
@@ -348,7 +349,7 @@
               <div class="field">
                 <label class="label">Email</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Your email">
+                  <input class="input" type="text" placeholder="Your email" type="email" name="email">
                 </div>
               </div>
               <div class="field">
@@ -360,7 +361,7 @@
               <div class="field">
                 <label class="label">Message</label>
                 <div class="control">
-                  <textarea class="textarea" placeholder="Your message goes here"></textarea>
+                  <textarea class="textarea" placeholder="Your message goes here" name="message"></textarea>
                 </div>
               </div>
               <div class="field">
@@ -371,9 +372,10 @@
               </div>
               <div class="field is-grouped">
                 <div class="control">
-                  <button class="button is-link">Send</button>
+                  <button class="button is-link" type="submit">Send</button>
                 </div>
               </div>
+              </form>
             </div>
           </div>
         </div>
