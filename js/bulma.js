@@ -1,26 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
-  const navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
-  const navbarItems = document.querySelectorAll('.navbar-item');
+  const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+  // Check if there are any navbar burgers
   if (navbarBurgers.length > 0) {
-    // Add click and touchstart event listeners for mobile and desktop
-    navbarBurgers.forEach(el => {
-      const toggleMenu = () => {
+
+    // Add a click event on each of them
+    navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
         const target = el.dataset.target;
         const $target = document.getElementById(target);
 
-        // Toggle the "is-active" class
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         el.classList.toggle('is-active');
         $target.classList.toggle('is-active');
-      };
 
-      el.addEventListener('click', toggleMenu);
-      el.addEventListener('touchstart', toggleMenu);
+      });
     });
   }
 
   // Close the navbar when a link is clicked
+  const navbarItems = document.querySelectorAll('.navbar-item');
+
   navbarItems.forEach(item => {
     item.addEventListener('click', () => {
       const navbarBurger = document.querySelector('.navbar-burger');
@@ -32,8 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+});
 
-  // Modal functionality
+document.addEventListener('DOMContentLoaded', () => {
+  // Functions to open and close a modal
   function openModal($el) {
     $el.classList.add('is-active');
   }
@@ -43,54 +48,65 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closeAllModals() {
-    document.querySelectorAll('.modal').forEach(($modal) => {
+    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
       closeModal($modal);
     });
   }
 
-  // Trigger modals
-  document.querySelectorAll('.js-modal-trigger').forEach($trigger => {
+  // Add a click event on buttons to open a specific modal
+  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
     const modal = $trigger.dataset.target;
     const $target = document.getElementById(modal);
 
-    $trigger.addEventListener('click', () => openModal($target));
+    $trigger.addEventListener('click', () => {
+      openModal($target);
+    });
   });
 
-  // Close modals
-  document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button').forEach($close => {
+  // Add a click event on various child elements to close the parent modal
+  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
     const $target = $close.closest('.modal');
-    $close.addEventListener('click', () => closeModal($target));
+
+    $close.addEventListener('click', () => {
+      closeModal($target);
+    });
   });
 
-  // Close modals with keyboard
+  // Add a keyboard event to close all modals
   document.addEventListener('keydown', (event) => {
-    if (event.key === "Escape") {
+    if(event.key === "Escape") {
       closeAllModals();
     }
   });
+});
 
-  // Back-to-top functionality
+document.addEventListener('DOMContentLoaded', () => {
+  // Get the back-to-top button
   const backToTopButton = document.querySelector('.back-to-top');
-  if (backToTopButton) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopButton.style.display = 'block';
-      } else {
-        backToTopButton.style.display = 'none';
-      }
-    });
 
-    backToTopButton.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  }
+  // Show or hide the button when scrolling
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
 
-  // Form validation
+  // Smooth scroll to top
+  backToTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Contact form interaction with required fields
+document.addEventListener('DOMContentLoaded', () => {
   const requiredFields = document.querySelectorAll('input[required], textarea[required]');
+
   requiredFields.forEach(field => {
     const helpMessage = field.parentElement.nextElementSibling;
 
