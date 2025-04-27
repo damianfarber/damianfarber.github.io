@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site in Construction</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Wait for the DOM to load
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get the browser language (first 2 letters)
+      var userLang = navigator.language || navigator.userLanguage;
+      userLang = userLang.slice(0,2).toLowerCase();
+
+      // Redirect based on language
+      if (userLang === 'es') {
+        window.location.replace('/es/');
+      } else {
+        window.location.replace('/en/');
+      }
+    });
+  </script>
 </head>
 <body>
-    <section class="hero is-fullheight is-warning is-bold">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title">
-                    Under Construction
-                </h1>
-
-            </div>
-        </div>
-    </section>
+  <noscript>
+    <p>Please enable JavaScript to view the site correctly.</p>
+  </noscript>
 </body>
 </html>
